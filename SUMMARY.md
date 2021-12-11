@@ -23,3 +23,8 @@
     * [Black Box Test #3](ejpt/black-box-tests/bb3.md)
   * [🔗 References](ejpt/references.md)
   * [📑 Glossary](ejpt/glossary.md)
+
+## Other Courses
+
+* [CEHv11](https://app.gitbook.com/s/29InV3wpbuqpBasJNvhr/)
+* [eCPPTv2](https://app.gitbook.com/s/S4zPJUXHVKDt93XdLSr6/)
