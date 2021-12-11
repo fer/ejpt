@@ -1,4 +1,4 @@
-# Annex B: Black Box Tests
+# ⬛ Black Box Tests
 
 * Each BlackBox Penetration Testing labs contains 2-4 machines that should be exploited
 * There are flags per machine

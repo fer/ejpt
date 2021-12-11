@@ -29,13 +29,13 @@ The format of an HTTP message is:
 ```
 Headers\r\n
 \r\n
-Message Body\r\n
+Message Body\r
 ```
 
 where:
 
 ```
-\r # carriage return
+ # carriage return
 \n newline
 ```
 

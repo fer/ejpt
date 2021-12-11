@@ -1,10 +1,10 @@
-# Annex A: Glossary
+# 📑 Glossary
 
-## Adware&#x20;
+## Adware
 
 Annoying software that shows ads to computer users.
 
-## ARM poisoning&#x20;
+## ARM poisoning
 
 Powerful attack you can use to intercept traffic on a switched network. This operation lets the hacker sniff traffic between the poisoned hosts even if the machines sit on a switched network. An attacker could also change the content of the packets.
 

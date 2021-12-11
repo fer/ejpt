@@ -2,6 +2,8 @@
 description: >-
   The eLearnSecurity Junior Penetration Tester (eJPT) is a 100% practical
   certification on penetration testing and information security essentials.
+cover: .gitbook/assets/Screen Shot 2021-12-10 at 9.24.47 PM.png
+coverY: 0
 ---
 
 # eJPT
