@@ -26,5 +26,4 @@
 
 ## Other Courses
 
-* [CEHv11](https://app.gitbook.com/s/29InV3wpbuqpBasJNvhr/)
 * [eCPPTv2](https://app.gitbook.com/s/UDufP6HFSwEX0O5mMzmE/)
